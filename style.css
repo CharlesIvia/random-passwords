@@ -102,4 +102,14 @@ input {
   border-radius: 25px;
 }
 
-
+button {
+  width: 100%;
+  padding: 8px;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #009688, #3f5185);
+  border: none;
+  color: white;
+  border-radius: 2.5rem;
+  margin-top: 0.5rem;
+  outline: none;
+}
