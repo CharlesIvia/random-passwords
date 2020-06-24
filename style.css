@@ -135,3 +135,15 @@ button:active {
 .message-success {
   color: #0c8990;
 }
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: #0c8990;
+  text-decoration: none;
+}
