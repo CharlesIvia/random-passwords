@@ -32,7 +32,7 @@ main {
 
 .container {
   padding: 1rem;
-  width: 350px;
+  width: 35rem;
   background-color: #f1f1f1;
   border-radius: 3px;
 }
@@ -90,6 +90,7 @@ form {
   height: 4.2rem;
   outline: none;
   padding-left: 1rem;
+  padding-bottom: 3.6rem;
   font-size: 16px;
 }
 
