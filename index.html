@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pass Vault</title>
+  </head>
+  <body>
+    <header>
+      <h1>Password Vault</h1>
+    </header>
+    <main>
+      <div class="box">
+        <p class="title">Generator</p>
+        <form>
+          <div class="result-row">
+            <input type="text" id="result" />
+            <div class="result-copy">Copy</div>
+          </div>
+
+          <div class="form-row">
+            <label for="length" class="length-label">Password Length</label>
+            <input type="number" id="length" min="5" max="25" value="10" />
+          </div>
+
+          <div class="form-row">
+            <label for="uppercase">Include Uppercase Letters</label>
+            <input type="checkbox" id="uppercase" checked disabled />
+          </div>
+
+          <div class="form-row">
+            <label for="lowercase">Include Lowecase Letters</label>
+            <input type="checkbox" id="lowercase" checked disabled />
+          </div>
+
+          <div class="form-row">
+            <label for="numbers">Include Numbers</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+
+          <div class="form-row">
+            <label for="symbols">Include speacial characters</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+
+          <button type="submit" id="generate">Generate Password</button>
+          <div class="message"></div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      Coded with love by
+      <a href="https://charlesivia.github.io/dev-portfolio/" target="_blank"
+        >Charles Ivia</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
