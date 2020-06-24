@@ -113,3 +113,24 @@ button {
   margin-top: 0.5rem;
   outline: none;
 }
+
+button:hover {
+  background: linear-gradient(220deg, #009688, #3f51b5);
+}
+
+button:active {
+  box-shadow: 1px 2px 2px gray;
+}
+
+.message {
+  color: #e63333;
+  margin-top: 0.5rem;
+  position: relative;
+  top: 0.5rem;
+  height: 1.6rem;
+  text-align: center;
+}
+
+.message-success {
+  color: #0c8990;
+}
