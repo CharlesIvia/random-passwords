@@ -43,7 +43,8 @@ form {
 
 .title {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .result-row {
@@ -55,8 +56,8 @@ form {
   padding: 7px 10px;
   background: #464646;
   color: white;
-  top: 9px;
-  right: 3px;
+  top: 0.5rem;
+  right: 0.3rem;
   cursor: pointer;
   border-radius: 2.5rem;
 }
@@ -83,14 +84,17 @@ form {
   width: 80px;
   text-align: left;
   outline: none;
+  padding-left: 1.5rem;
 }
 
 #result {
   width: 33.1rem;
   height: 4.2rem;
   outline: none;
-  padding-left: 1rem;
-  padding-bottom: 3.6rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: 1px;
   font-size: 16px;
 }
 
@@ -126,6 +130,7 @@ button:active {
 .message {
   color: #e63333;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
   position: relative;
   top: 0.5rem;
   height: 1.6rem;
