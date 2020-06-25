@@ -21,6 +21,8 @@ h1 {
   text-align: center;
   margin-top: 5vh;
   color: white;
+  line-height: 3.3rem;
+  letter-spacing: .2rem;
 }
 
 main {
