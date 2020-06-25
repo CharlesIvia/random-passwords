@@ -151,3 +151,9 @@ function generateRandomCharacter() {
     return functions[Math.floor(Math.random() * 2)]();
   }
 }
+
+function hideMessage(params) {
+  setTimeout(function (params) {
+    message.textContent = "";
+  }, 3000);
+}
