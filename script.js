@@ -71,3 +71,11 @@ function getRandomLowercase() {
 
 console.log(getRandomLowercase());
 
+//genearate random number
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * 10).toString();
+}
+
+console.log(getRandomNumber());
+
