@@ -106,4 +106,19 @@ function generateRandomCharacter() {
 
     return functions[Math.floor(Math.random() * 4)]();
   }
+
+  if (
+    uppercase.checked &&
+    lowercase.checked &&
+    numbers.checked &&
+    !symbols.checked
+  ) {
+    const functions = {
+      0: getRandomUppercase,
+      1: getRandomLowercase,
+      2: getRandomNumber,
+    };
+
+    return functions[Math.floor(Math.random() * 3)]();
+  }
 }
