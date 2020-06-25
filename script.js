@@ -23,7 +23,7 @@ generate.addEventListener("click", function (e) {
     result.value = passsword;
     message.textContent = "";
   } else {
-    message.textContent = "Selecr length betwen 5 and 25";
+    message.textContent = "Select length betwen 5 and 25";
     if (message.classList.contains("message-success")) {
       message.classList.remove("message-success");
     }
@@ -81,10 +81,29 @@ console.log(getRandomNumber());
 
 //generate random symbol
 
-function getRandomSymbols() {
-  const str = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+function getRandomSymbol() {
+  const str = "!#$%&()*+,-./:;<=>?@[]^_{|}~";
   return str[Math.floor(Math.random() * str.length)];
 }
 
-console.log(getRandomSymbols());
+console.log(getRandomSymbol());
 
+//Call random fn from above 4 fns
+
+function generateRandomCharacter() {
+  if (
+    uppercase.checked &&
+    lowercase.checked &&
+    numbers.checked &&
+    symbols.checked
+  ) {
+    const functions = {
+      0: getRandomUppercase,
+      1: getRandomLowercase,
+      2: getRandomNumber,
+      3: getRandomSymbol,
+    };
+
+    return functions[Math.floor(Math.random() * 4)]();
+  }
+}
