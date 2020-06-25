@@ -51,3 +51,13 @@ copyBtn.addEventListener("click", function () {
   message.classList.add("message-success");
   hideMessage();
 });
+
+//generate random uppercase
+
+function getRandomUppercase() {
+  //ASCII values for A to Z (65 to 90)
+
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+console.log(getRandomUppercase());
