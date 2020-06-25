@@ -79,3 +79,12 @@ function getRandomNumber() {
 
 console.log(getRandomNumber());
 
+//generate random symbol
+
+function getRandomSymbols() {
+  const str = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+  return str[Math.floor(Math.random() * str.length)];
+}
+
+console.log(getRandomSymbols());
+
