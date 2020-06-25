@@ -61,3 +61,13 @@ function getRandomUppercase() {
 }
 
 console.log(getRandomUppercase());
+
+//generate random lowercase
+
+function getRandomLowercase() {
+  //ASCII for a - z (97 to 122)
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+
+console.log(getRandomLowercase());
+
