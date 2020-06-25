@@ -31,3 +31,23 @@ generate.addEventListener("click", function (e) {
     hideMessage();
   }
 });
+
+//Copy functionality
+
+copyBtn.addEventListener("click", function () {
+  const textarea = document.createElement("textarea");
+  const passsword = result.value;
+
+  if (!passsword) {
+    return;
+  }
+
+  textarea.value = passsword;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+  message.textContent = "Password copied";
+  message.classList.add("message-success");
+  hideMessage();
+});
